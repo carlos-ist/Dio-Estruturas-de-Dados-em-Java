@@ -23,11 +23,15 @@ public class Main {
 
         System.out.println("-------------------");
 
-        System.out.println(no1);
-        System.out.println(no1.getProximoNo());
-        System.out.println(no1.getProximoNo().getProximoNo());
-        System.out.println(no1.getProximoNo().getProximoNo().getProximoNo());
-        System.out.println(no1.getProximoNo().getProximoNo().getProximoNo().getProximoNo());
+        System.out.println(no1); // no1.toString();
+        System.out.println(no1.getProximoNo()); // no1.proximoNo.toString(); // no1.no2.toString(); // no2.toString();
+        System.out.println(no1.getProximoNo().getProximoNo()); // no1.no2.proximoNo.toString(); // no1.no2.no3.toString();
+        System.out.println(no1.getProximoNo().getProximoNo().getProximoNo()); // no1.no2.no3.proximoNo.toString(); // no1.no2.no3.no4.toString();
+        System.out.println(no1.getProximoNo().getProximoNo().getProximoNo().getProximoNo()); // no1.no2.no3.no4.proximoNo.toString();
+                                                                                             // Por quê a linha acima não retorna retorna NullPointerException.
         
+     //   No no5 = new No("Conteúdo no5");
+     //   System.out.println(no5.getProximoNo().toString()); // java.lang.NullPointerException
+          
     }
 }
