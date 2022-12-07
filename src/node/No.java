@@ -25,7 +25,7 @@ public class No {
         return proximoNo;
     }
 
-    public void setProximoNo(No proximoNo) { // Aqui é coletado a referência do próximo objeto. Que é do tipo Nó.
+    public void setProximoNo(No proximoNo) { // Aqui é coletado a referência/endereço/apontamento do próximo objeto. Que é do tipo Nó.
         this.proximoNo = proximoNo;
     }
 
